@@ -26,7 +26,7 @@ resource "aws_instance" "example" {
 
 resource "aws_key_pair" "auth" {
   key_name = "ltskey"
-  public_key = file("~/.ssh/ltskey.pub")
+  public_key = file("/var/lib/jenkins/workspace/TFJenkinsDemo/ltskey.pub")
 }
 
 resource "aws_security_group" "instance" {
