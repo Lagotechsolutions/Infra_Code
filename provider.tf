@@ -5,7 +5,7 @@ terraform {
       version = "~> 5.0"
     }
   }
-/*
+
 backend "s3" {
     # Replace this with your bucket name!
     bucket         = "lagotech-state-file"
@@ -16,7 +16,6 @@ backend "s3" {
     dynamodb_table = "terraform-up-and-running-locks"
     encrypt        = true
   }
-  */
 } 
 
 # Configure the AWS Provider
